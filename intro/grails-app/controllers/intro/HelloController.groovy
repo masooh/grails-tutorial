@@ -3,6 +3,9 @@ package intro
 class HelloController {
 
     def index() {
-        render text: 'Hello World'
+        println params.what
+        println params.whom
+        println params
+        render view: '/hello/index', model: params
     }
 }

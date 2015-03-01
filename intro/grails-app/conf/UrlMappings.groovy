@@ -7,7 +7,7 @@ class UrlMappings {
             }
         }
 
-        "/say-hello" (controller: 'hello')
+        "/say-$what/to-$whom" (controller: 'hello')
 
         "/"(view:"/index")
         "500"(view:'/error')
