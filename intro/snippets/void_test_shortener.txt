@@ -1,0 +1,8 @@
+void "test shortener"() {
+        given:
+        String text = '12345678901234567890'
+
+        expect:
+        tagLib.shorten(text: text).toString() == '1234567890 ...'
+        applyTemplate('<g:shorten text="${input}" />', [input: text]) == '1234567890 ...'
+    }

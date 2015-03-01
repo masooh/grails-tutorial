@@ -1,0 +1,7 @@
+def shorten = { attrs ->
+        String text = attrs.remove("text")
+        if (text.size() > 13) {
+            text = text.substring(0, 10) + " ..."
+        }
+        out << text
+    }

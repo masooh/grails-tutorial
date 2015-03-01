@@ -1,0 +1,3 @@
+println controllerName
+        println actionName
+        render view: "/$controllerName/$actionName", model: params

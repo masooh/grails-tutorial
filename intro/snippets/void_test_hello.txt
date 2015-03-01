@@ -1,0 +1,8 @@
+void "test hello"() {
+        when:
+        controller.index()
+
+        then:
+        status == 200
+        response.text == 'Hello World'
+    }
