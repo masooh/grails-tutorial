@@ -29,4 +29,5 @@
 # "temporary" build files
 /target
 
-.idea/**
+# IntelliJ
+/.idea
